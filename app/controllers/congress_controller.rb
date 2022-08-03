@@ -1,0 +1,2 @@
+class CongressController < ApplicationController
+end
