@@ -8,7 +8,9 @@ class CongressController < ApplicationController
     response = conn.get("/congress/v1/members/house/CO/current.json")
 
     data = JSON.parse(response.body, symbolize_names: true)
-    @members = data[:results]
+    @members = data[:results].map do |member_data|
+      Member.new(member_data)
+    end
     render 'congress/index'
   end
 end

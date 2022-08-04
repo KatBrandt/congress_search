@@ -2,9 +2,9 @@
 
 <% @members.each do |member| %>
   <ul class='members'>
-  <li class='name'><%= member[:name] %></li>
-  <li class='role'><%= member[:role] %></li>
-  <li class='party'><%= member[:party] %></li>
-  <li class='district'><%= member[:district] %></li>
+  <li class='name'><%= member.name %></li>
+  <li class='role'><%= member.role %></li>
+  <li class='party'><%= member.party %></li>
+  <li class='district'><%= member.district %></li>
   </ul>
 <% end %>
