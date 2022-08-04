@@ -1,7 +1,6 @@
 class CongressService
-  def self.members_of_house(state = 'CO')
+  def self.members_of_house(state='CO')
     response = conn.get("/congress/v1/members/house/#{state}/current.json")
-
     JSON.parse(response.body, symbolize_names: true)
   end
 
