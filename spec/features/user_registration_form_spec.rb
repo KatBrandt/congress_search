@@ -6,7 +6,7 @@ describe "User Registration Form" do
 
     click_on "Register as a User"
 
-    expect(current_path).to eq new_users_path
+    expect(current_path).to eq new_user_path
 
     username = 'funbucket13'
     password = 'test'
