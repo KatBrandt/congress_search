@@ -11,8 +11,8 @@ describe "User Registration Form" do
     username = 'funbucket13'
     password = 'test'
 
-    fill_in :username, with: username
-    fill_in :password, with: password
+    fill_in :user_username, with: username
+    fill_in :user_password, with: password
 
     click_on 'Create User'
 
