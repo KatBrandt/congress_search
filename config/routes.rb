@@ -8,4 +8,8 @@ Rails.application.routes.draw do
 
   get '/login', to: 'users#login_form'
   post '/login', to: 'users#login'
+
+  namespace :admin do
+    get '/dashboard', to: 'dashboard#index'
+  end
 end
